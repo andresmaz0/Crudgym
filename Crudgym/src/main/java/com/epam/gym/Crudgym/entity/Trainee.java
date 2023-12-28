@@ -29,10 +29,8 @@ public class Trainee {
     @Setter
     private String Address;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
-    @Getter
-    @Setter
     private User user;
 
     @ManyToMany

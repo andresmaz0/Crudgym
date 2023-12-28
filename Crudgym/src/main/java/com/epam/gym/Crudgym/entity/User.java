@@ -2,6 +2,8 @@ package com.epam.gym.Crudgym.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 @Entity
@@ -11,18 +13,28 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long user_id;
 
+    @Getter
+    @Setter
     @Column(nullable = false)
     private String firstname;
 
+    @Getter
+    @Setter
     @Column(nullable = false)
     private String lastname;
 
-    @Column(nullable = false)
+    @Getter
+    @Setter
+    @Column(nullable = true)
     private String username;
 
-    @Column(nullable = false)
+    @Getter
+    @Setter
+    @Column(nullable = true)
     private String password;
 
+    @Getter
+    @Setter
     @Column(nullable = false)
     private Boolean IsActive;
 
