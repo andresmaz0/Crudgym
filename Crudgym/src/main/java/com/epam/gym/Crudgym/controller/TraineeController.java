@@ -10,7 +10,6 @@ import java.util.List;
 @RestController
 @RequestMapping(name = "")
 public class TraineeController {
-    //gym/v1/trainee
     @Autowired
     traineeRepository repo;
 

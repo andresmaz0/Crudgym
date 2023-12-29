@@ -13,8 +13,6 @@ public class TrainingController {
     @Autowired
     trainingRepository repo;
 
-    String name_entity = "training";
-
     @GetMapping("getTraining")
     public List<Training> getTrainings(){
         return repo.findAll();
